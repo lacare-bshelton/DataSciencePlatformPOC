@@ -2,7 +2,7 @@
 
 This project contains scripts pertaining to the LA Care Data Science Platform Proof of Concept use case.
 
-###Project Folder Structure
+### Project Folder Structure
 
 **EDA**
 This folder houses exploratory data analysis scripts.
