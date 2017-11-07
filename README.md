@@ -4,8 +4,8 @@ This project contains scripts pertaining to the LA Care Data Science Platform Pr
 
 ### Project Folder Structure
 
-**EDA**
+#### EDA
 This folder houses exploratory data analysis scripts.
 
-**Models**
+#### Models
 This folder houses the different models developed at the project solution.
