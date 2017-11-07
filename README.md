@@ -6,4 +6,4 @@ This project contains scripts pertaining to the LA Care Data Science Platform Pr
 
 **EDA**: Houses exploratory data analysis scripts.
 
-**Models**: Houses the different models developed at the project solution.
+**Models**: Houses the different models developed as the project solution.
