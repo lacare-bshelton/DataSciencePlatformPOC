@@ -1,0 +1,27 @@
+--This query provides claim-header detail for DME claims adjudicated through QNXT.
+
+SELECT
+	a.provid,
+	a.fullname as prov_name,
+	b.provtype,
+	c.claimid, 
+	c.provid,
+	c.memid,
+	c.startdate,
+	c.enddate,
+	c.cleandate,
+	c.paiddate,
+	c.[status],
+	c.totalamt as billed_amt,
+	c.totalpaid as paid_amt,
+	d.[description] as product_description
+FROM
+	CSNLACSQL01_Plandata.dbo.provider a --provider information
+INNER JOIN
+	CSNLACSQL01_Plandata.dbo.providertype b ON a.provtype = b.provtype --provider type information
+INNER JOIN
+	CSNLACSQL01_Plandata.dbo.claim c ON a.provid = c.provid --claim header information
+INNER JOIN
+	CSNLACSQL01_Plandata.dbo.benefitplan d ON c.planid = d.planid --product line information
+WHERE 
+	b.[description] = 'Assistive Device And Sickroom Dme'
