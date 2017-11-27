@@ -14,13 +14,13 @@
 # dictate the number of clusters to be formed
 k1 <- 5
 
-#specify directory to download data
-wd <- "/Users/ericashelton/Documents/DataScience/practical_statistics/medicare/Medicare_Provider_Util_Payment_PUF_CY2015" 
+#specify directory to import the data
+wd <- "/Users/username/import_path" 
 #Download the Medicare_Provider_Util_Payment_PUF_CY2015.txt" dataset out of the .zip archive found at the following path: 
 #http://www.cms.gov/apps/ama/license.asp?file=http://download.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Downloads/Medicare_Provider_Util_Payment_PUF_CY2015.zip
 
 #specify directory to write the outputs
-wd2 <- "/Users/ericashelton/Documents/DataScience/practical_statistics/medicare/Medicare_Provider_Util_Payment_PUF_CY2015"
+wd2 <- "/Users/username/write_path"
 
 #load required packages
 packages <- c("data.table",
